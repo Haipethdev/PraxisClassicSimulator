@@ -4,18 +4,20 @@ class Class_(ABC):
 
     @property
     @abstractmethod
-    def base_stats(self):
-        return self.__base_stats
-
-    @base_stats.setter
-    @abstractmethod
-    def base_stats(self, base_stats):
-        self.__base_stats = base_stats
+    def power(self):
+        pass
 
     @property
     @abstractmethod
-    def resource(self):
-        return self.__resource
+    def stats_per_level(self):
+        pass
 
     @property
+    @abstractmethod
+    def weapon_proficiencies(self):
+        pass
 
+    @property
+    @abstractmethod
+    def armour_proficiencies(self):
+        pass
